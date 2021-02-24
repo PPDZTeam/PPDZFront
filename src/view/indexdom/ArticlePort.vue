@@ -2,60 +2,67 @@
     <div id="ap_top_box">
         <div class="ap_box_content">
             <div class="ap_logo">
-                123
+                这里是PPDZ的Logo
             </div>
             <div class="ap_sort">
-                123
+                <!--这里放筛选后的标签-->
+                <SortList></SortList>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import SortList from "./ArticlePort/SortList";
+
+export default {
+    components: {SortList}
+}
 </script>
 
 <style>
-    #ap_top_box{
-        width: 100%;
-        height: 120px;
+#ap_top_box {
+    width: 100%;
+    height: 120px;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        margin-top: 10px;
-    }
+    margin-top: 10px;
+}
 
-    .ap_box_content{
-        width: calc(90% - 20px);
-        height: calc(100% - 20px);
+.ap_box_content {
+    width: calc(90% - 20px);
+    height: calc(100% - 20px);
 
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 
-        padding: 10px;
+    padding: 10px;
 
-        background-color: white;
-    }
+    background-color: white;
+}
 
-    .ap_box_content >div{
-        height: 100%;
+.ap_box_content > div {
+    height: 100%;
 
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 
-    .ap_logo{
-        width: 250px;
+.ap_logo {
+    width: 250px;
 
-        background-color: red;
-    }
+    /*下面引用了VUE自带的一张logo图片*/
+    background: deepskyblue url("../../assets/logo.png") no-repeat center;
+}
 
-    .ap_sort{
-        width: calc(100% - 250px);
+.ap_sort {
+    width: calc(100% - 250px);
 
-        background-color: green;
-    }
+    background-color: green;
+}
 </style>

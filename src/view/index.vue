@@ -17,9 +17,10 @@
     import ArticleProtDom from '@/view/indexdom/ArticlePort.vue'
     import DiscussDom from '@/view/indexdom/Discuss.vue'
     import Sidebar from "@/view/common/sidebar";
+
     export default{
         components:{
-          Sidebar,
+            Sidebar,
             HeaderDom,
             ArticleProtDom,
             DiscussDom

@@ -1,6 +1,6 @@
 <template>
     <div id="Sort_List">
-        <div class="sl_Data" v-for="item in SortList"><a>{{ item }}</a></div>
+        <div class="sl_Data" v-for="item in SortList">{{ item }}</div>
     </div>
 </template>
 

@@ -9,6 +9,9 @@
 
         <!--讨论组件-->
         <DiscussDom></DiscussDom>
+
+        <!--通用尾部-->
+        <Footer></Footer>
     </div>
 </template>
 
@@ -17,9 +20,11 @@
     import ArticleProtDom from '@/view/indexdom/ArticlePort.vue'
     import DiscussDom from '@/view/indexdom/Discuss.vue'
     import Sidebar from "@/view/common/sidebar";
+    import Footer from "./common/footer";
 
     export default{
         components:{
+            Footer,
             Sidebar,
             HeaderDom,
             ArticleProtDom,

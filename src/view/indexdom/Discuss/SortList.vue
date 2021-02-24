@@ -25,14 +25,14 @@ export default {
     height: 100%;
 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
+    justify-content: space-between;
 
 }
 
 .sl_Data {
-    margin-left: 4%;
-    width: 15%;
+    width: calc(100% / 5 - 10px);
     height: 80%;
     border: solid 1px red;
     border-radius: 10px;

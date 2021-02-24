@@ -24,7 +24,7 @@
 <style>
     #header_top_box{
         width: 100%;
-        height: 70px;
+        height: 40px;
 
         display: flex;
         align-items: center;
@@ -62,6 +62,7 @@
     }
     /*搜索框B*/
     #header_top_box .el-input__inner{
+        height: 30px;
         background-color: #f7f7f7;
 
         border: 1;

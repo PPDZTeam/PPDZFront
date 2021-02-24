@@ -30,10 +30,12 @@ export default {
     justify-content: center;
 
     margin-top: 10px;
+    
+    background-color: #f7f7f7;
 }
 
 .ap_box_content {
-    width: calc(90% - 20px);
+    width: calc(1300px - 20px);
     height: calc(100% - 20px);
 
     display: flex;

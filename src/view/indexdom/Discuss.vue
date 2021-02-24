@@ -3,7 +3,6 @@
         <div class="discuss_box_content">
             <div class="discuss_title">
                 热门讨论
-                <!--ashidaois hdoiahs doihasoih-->
             </div>
             <div class="discuss_show">
                 <SortList></SortList>
@@ -30,10 +29,12 @@ export default {
     justify-content: center;
 
     margin-top: 10px;
+    
+    background-color: #f7f7f7;
 }
 
 .discuss_box_content {
-    width: calc(90% - 20px);
+    width: calc(1300px - 20px);
     height: calc(100% - 20px);
 
     display: flex;
@@ -57,14 +58,10 @@ export default {
     height: 40px;
 
     align-items: center !important;
-
-    background-color: red;
 }
 
 .discuss_show {
     width: 100%;
     height: 100%;
-
-    background-color: green;
 }
 </style>

@@ -28,32 +28,46 @@ export default {
 </script>
 
 <style scoped>
-  #sidebar_left_box {
-      background-color: white;
-      border: 1px solid red;
-      border-radius: 5px;
+#sidebar_left_box {
+    background-color: white;
+    border-radius: 5px;
 
-      user-select: none;
+    user-select: none;
 
-      width: 70px;
-      height: 400px;
-      position: fixed;
-      right: 10px;
-      top: 150px;
+    width: 70px;
+    height: 350px;
+    position: fixed;
+    right: 10px;
+    top: 25%;
 
-      display: flex;
-      align-items: center;
-      flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 
-      font-size: 15px;
+    font-size: 15px;
+    border-radius: 10px;
 }
-  .sidebar_data {
-      width: 100%;
-      height: 50px;
-      margin-top: 1px;
-      line-height: 40px;
-      cursor: pointer;
+.sidebar_data {
+    width: 100%;
+    height: calc(100% / 6);
+    margin-top: 1px;
+    line-height: 40px;
+    cursor: pointer;
 
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar_data:hover{
+    background-color: #adadad;
+    font-weight: 600;
+    color: white;
+}
+.sidebar_data:first-of-type{
+    border-radius: 10px 10px 0px 0px;
+}
+.sidebar_data:last-of-type{
+    border-radius: 0px 0px 10px 10px;
 }
 </style>

@@ -2,7 +2,8 @@
     <div id="index_top_box">
         <!--通用头部-->
         <HeaderDom></HeaderDom>
-
+        <!--侧边导航栏-->
+        <Sidebar></Sidebar>
         <!--分类组件-->
         <ArticleProtDom></ArticleProtDom>
 
@@ -15,9 +16,10 @@
     import HeaderDom from '@/view/common/header.vue'
     import ArticleProtDom from '@/view/indexdom/ArticlePort.vue'
     import DiscussDom from '@/view/indexdom/Discuss.vue'
-
+    import Sidebar from "@/view/common/sidebar";
     export default{
         components:{
+          Sidebar,
             HeaderDom,
             ArticleProtDom,
             DiscussDom

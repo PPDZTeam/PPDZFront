@@ -2,7 +2,7 @@
     <div id="discuss_top_box">
         <div class="discuss_box_content">
             <div class="discuss_title">
-                热门讨论
+                热门讨论ashidaois hdoiahs doihasoih 
             </div>
             <div class="discuss_show">
                 123
@@ -17,7 +17,7 @@
 <style>
     #discuss_top_box{
         width: 100%;
-        height: 200px;
+        height: 230px;
 
         display: flex;
         align-items: center;
@@ -49,7 +49,7 @@
     .discuss_title{
         width: 100%;
         height: 40px;
-        
+
         align-items: center !important;
 
         background-color: red;

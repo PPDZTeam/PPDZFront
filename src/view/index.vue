@@ -12,11 +12,16 @@
         <!--热门讨论组件-->
         <DiscussDom></DiscussDom>
 
+<<<<<<< HEAD
         <!--精选文章组件-->
         <ChoiceDom></ChoiceDom>
 
         <!--大神用户组件-->
         <GodUserDom></GodUserDom>
+=======
+        <!--通用尾部-->
+        <Footer></Footer>
+>>>>>>> bc2aa8c997ad6510cc605bd0e51d03a3845f73b1
     </div>
 </template>
 
@@ -27,9 +32,11 @@
     import ChoiceDom from '@/view/indexdom/Choice.vue';
     import GodUserDom from '@/view/indexdom/GodUser.vue';
     import Sidebar from "@/view/common/sidebar";
+    import Footer from "./common/footer";
 
     export default{
         components:{
+            Footer,
             Sidebar,
             HeaderDom,
             ArticleProtDom,

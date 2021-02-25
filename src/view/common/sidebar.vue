@@ -1,32 +1,37 @@
 <template>
-  <div id="sidebar_left_box">
-      <div class="sidebar_data">
-          导航
-      </div>
-      <div class="sidebar_data">
-          热门讨论
-      </div>
-      <div class="sidebar_data">
-          精选文章
-      </div>
-      <div class="sidebar_data">
-          大神用户
-      </div>
-      <div class="sidebar_data">
-          热门专区
-      </div>
-      <div class="sidebar_data">
-          相关专区
-      </div>
-      <div class="sidebar_data" id="top_button">
-          回到顶部
-      </div>
-  </div>
+    <div id="sidebar_left_box">
+        <div class="sidebar_data">
+            导航
+        </div>
+        <div class="sidebar_data">
+            热门讨论
+        </div>
+        <div class="sidebar_data">
+            精选文章
+        </div>
+        <div class="sidebar_data">
+            大神用户
+        </div>
+        <div class="sidebar_data">
+            热门专区
+        </div>
+        <div class="sidebar_data">
+            相关专区
+        </div>
+        <div class="sidebar_data" id="top_button" @click="BackToTop">
+            回到顶部
+        </div>
+    </div>
 </template>
 
 <script>
 export default {
     name: "sidebar",
+    methods: {
+        BackToTop() {
+            document.body.scrollTop = document.documentElement.scrollTop = 0;
+        }
+    }
 
 }
 </script>
@@ -52,6 +57,7 @@ export default {
     font-size: 15px;
     border-radius: 10px;
 }
+
 .sidebar_data {
     width: 100%;
     height: calc(100% / 6);
@@ -63,15 +69,18 @@ export default {
     align-items: center;
     justify-content: center;
 }
-.sidebar_data:hover{
+
+.sidebar_data:hover {
     background-color: #adadad;
     font-weight: 600;
     color: white;
 }
-.sidebar_data:first-of-type{
+
+.sidebar_data:first-of-type {
     border-radius: 10px 10px 0px 0px;
 }
-.sidebar_data:last-of-type{
+
+.sidebar_data:last-of-type {
     border-radius: 0px 0px 10px 10px;
 }
 </style>

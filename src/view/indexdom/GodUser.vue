@@ -16,7 +16,7 @@
                         </el-image>
                         <div class="g_show_user_info">
                             <span style="margin-bottom: 15px;">用户姓名</span>
-                            <span>信息</span>
+                            <span>用户信息</span>
                         </div>
                     </div>
                     <div class="g_show_card">

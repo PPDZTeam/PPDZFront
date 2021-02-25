@@ -7,7 +7,22 @@
             </div>
 
             <div class="goduser_show">
-                123
+                <div v-for="item in 8">
+                    <div class="g_show_user">
+                        <el-image
+                              style="width: 80px;height: 80px;border-radius: 50%;"
+                              :src="url"
+                              :fit="fit">
+                        </el-image>
+                        <div class="g_show_user_info">
+                            <span style="margin-bottom: 15px;">用户姓名</span>
+                            <span>信息</span>
+                        </div>
+                    </div>
+                    <div class="g_show_card">
+                        帖子
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -20,7 +35,6 @@
 <style>
 #goduser_top_box {
     width: 100%;
-    height: 300px;
 
     display: flex;
     align-items: center;
@@ -57,6 +71,42 @@
 .goduser_show{
     width: 100%;
     height: 100%;
-    background-color: red;
+
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.goduser_show > div{
+    width: calc(50% - 15px);
+    height: 80px;
+
+    margin-bottom: 10px;
+    display: flex;
+}
+.g_show_user{
+    width: 250px;
+    height: 100%;
+
+    display: flex;
+    align-items: flex-start;
+}
+.g_show_user_info{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    margin-left: 5px;
+    padding: 10px 0px;
+}
+
+.g_show_card{
+    width: calc(100% - 250px);
+    height: 100%;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 </style>

@@ -29,7 +29,15 @@ export default {
     name: "sidebar",
     methods: {
         BackToTop() {
-            document.body.scrollTop = document.documentElement.scrollTop = 0;
+            let scrolnum = document.documentElement.scrollTop
+            if(scrolnum>200){
+                let timeTop = setInterval(()=>{
+                    document.documentElement.scrollTop = scrolnum -= 50;
+                    if(scrolnum<0){
+                        clearInterval(timeTop)
+                    }
+                },10);
+            }
         }
     }
 

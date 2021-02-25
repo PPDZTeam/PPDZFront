@@ -1,9 +1,15 @@
 <template>
     <div id="goduser_top_box">
         <div class="goduser_box_content">
+
             <div class="goduser_title">
                 大神用户
             </div>
+
+            <div class="goduser_show">
+                123
+            </div>
+
         </div>
     </div>
 </template>
@@ -14,7 +20,7 @@
 <style>
 #goduser_top_box {
     width: 100%;
-    height: 200px;
+    height: 300px;
 
     display: flex;
     align-items: center;
@@ -36,7 +42,7 @@
 
     padding: 10px;
 
-    background-color: red;
+    background-color: white;
 }
 
 .goduser_title {
@@ -46,5 +52,11 @@
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
+}
+
+.goduser_show{
+    width: 100%;
+    height: 100%;
+    background-color: red;
 }
 </style>

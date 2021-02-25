@@ -18,12 +18,16 @@
       <div class="sidebar_data">
           相关专区
       </div>
+      <div class="sidebar_data" id="top_button">
+          回到顶部
+      </div>
   </div>
 </template>
 
 <script>
 export default {
-    name: "sidebar"
+    name: "sidebar",
+
 }
 </script>
 
@@ -35,7 +39,7 @@ export default {
     user-select: none;
 
     width: 70px;
-    height: 350px;
+    height: 400px;
     position: fixed;
     right: 10px;
     top: 25%;

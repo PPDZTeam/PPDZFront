@@ -2,6 +2,10 @@
     <div id="header_top_box">
         <div class="header_box_content">
             <div class="left_box">
+                <a>首页</a>
+                <a>碰碰点子</a>
+                <a>碰碰点子</a>
+                <a>碰碰点子</a>
                 <a>碰碰点子</a>
             </div>
 
@@ -12,13 +16,20 @@
             </div>
 
             <div class="right_box">
-                <a>碰碰点子</a>
+                <a>登录 | 注册</a>
+                <a>会员中心</a>
+                <a>收藏</a>
+                <a>消息</a>
+                <a>创作中心</a>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+    export default{
+
+    }
 </script>
 
 <style>
@@ -35,7 +46,7 @@
 
     .header_box_content{
         height: 100%;
-        width: 90%;
+        width: 1300px;
 
         display: flex;
         align-items: center;
@@ -54,7 +65,20 @@
         width: 30%;
         height: 100%;
 
+        display: flex;
+        justify-content: space-between;
+
         padding-right: 20px;
+    }
+    #header_top_box .left_box > a{
+        width: 70px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 13px;
     }
 
     #header_top_box .search_box{
@@ -90,6 +114,19 @@
         width: 30%;
         height: 100%;
 
+        display: flex;
+        justify-content: space-between;
+
         padding-left: 20px;
+    }
+    #header_top_box .right_box > a{
+        width: 70px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 13px;
     }
 </style>

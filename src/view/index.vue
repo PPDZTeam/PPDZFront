@@ -43,7 +43,18 @@
             DiscussDom,
             ChoiceDom,
             GodUserDom,
-        }
+        },
+		created() {
+			this.$axios({
+                url: '/api/user/reguser',
+                data:{
+                    ceshi: 1
+                },
+                method: 'post'
+            }).then((res)=>{
+                console.log(res);
+            })
+		}
     }
 </script>
 

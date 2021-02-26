@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import App from './App';
+import store from './store/index.js';
 
 import axios from 'axios';
 import router from './router';
@@ -15,6 +16,7 @@ Vue.use(ElementUI);
 new Vue({
 	el: '#app',
 	router,
+    store,
 	components: {App},
 	template: '<App/>',
 })

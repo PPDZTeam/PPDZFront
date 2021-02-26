@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 import index from '@/view/index.vue'
+
+import login from '@/view/user/Login.vue'
 
 Vue.use(Router)
 
@@ -8,10 +11,15 @@ const router = new Router({
   mode:'history',
   routes: [
     {
-      path: '/',
-      name: 'index',
-      component: index
-    }
+		path: '/',
+		name: 'index',
+		component: index
+    },
+	{
+        path: '/Login',
+        name: 'login',
+        component: login
+	}
   ]
 })
 

@@ -30,7 +30,7 @@ name: "footer"
 <style scoped>
 #footer_box{
     width: 100%;
-    height: 70px;
+    height: 90px;
 
     display: flex;
     align-items: center;

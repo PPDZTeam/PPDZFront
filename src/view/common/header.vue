@@ -16,7 +16,7 @@
             </div>
 
             <div class="right_box">
-                <a>登录 | 注册</a>
+                <router-link to="login">登录 | 注册</router-link>
                 <a>会员中心</a>
                 <a>收藏</a>
                 <a>消息</a>
@@ -79,6 +79,7 @@
         justify-content: center;
 
         font-size: 13px;
+        color: black;
     }
 
     #header_top_box .search_box{
@@ -128,5 +129,6 @@
         justify-content: center;
 
         font-size: 13px;
+        color: black;
     }
 </style>

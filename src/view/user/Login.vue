@@ -4,7 +4,7 @@
         <HeaderDom></HeaderDom>
 
         <div class="user_login_content">
-            <div class="login_box" v-if="showLogin">
+            <div class="login_box" v-show="showLogin">
                 <span style="margin: 20px 0px;display: inline-block;font-size: 25px;">登 录</span>
                 <div class="login_input_box">
 
@@ -27,7 +27,7 @@
                     </div>
 
                     <el-button style="width: 100%;margin-bottom: 10px;" type="primary" @click="Login">登录</el-button>
-                    <el-button style="width: 100%;margin: 0;margin-bottom: 40px" @click="showLogin = false">注册</el-button>
+                    <el-button style="width: 100%;margin: 0;margin-bottom: 40px" @click="showLogin = false;resetForm('RegFrom')">注册</el-button>
 
                     <span class="agree_box">
                         登录即代表您同意<a>用户协议</a>和<a>隐私政策</a>
@@ -35,7 +35,7 @@
                 </div>
             </div>
 
-            <div class="reg_box" v-if="!showLogin">
+            <div class="reg_box" v-show="!showLogin">
                 <span style="margin: 20px 0px;display: inline-block;font-size: 25px;">注册</span>
                 <div class="reg_input_box">
 
@@ -53,7 +53,7 @@
                     </el-form>
 
                     <el-button style="width: 100%;margin-bottom: 10px;" type="primary" @click="Register">注册账号</el-button>
-                    <el-button style="width: 100%;margin: 0;margin-bottom: 40px" @click="showLogin = true">已有账号</el-button>
+                    <el-button style="width: 100%;margin: 0;margin-bottom: 40px" @click="showLogin = true;resetForm('LoginForm')">已有账号</el-button>
 
                     <span class="agree_box">
                         注册即代表您同意<a>用户协议</a>和<a>隐私政策</a>
@@ -96,6 +96,7 @@
                         { min: 4, max: 16, message: '长度在 4 到 16 个字符', trigger: 'blur' }
                     ]
                 },
+
                 RegRules:{
                     username:[
                         { required: true, message: '请输入用户名称', trigger: 'blur' },
@@ -131,7 +132,7 @@
                             data: this.RegForm
                         }).then((res)=>{
                             let resultData = res.data;
-                            if(resultData.status == true){
+                            if(resultData.status == 0){
                                 this.$alert('注册成功！', '消息', {
                                     confirmButtonText: '确定',
                                     callback: action => {
@@ -139,15 +140,33 @@
                                     }
                                 });
                             }else{
-                                this.$alert('注册失败！请联系管理员！', '消息', {
-                                    confirmButtonText: '确定'
-                                });
+                                if(resultData.status == 1){
+                                    this.$alert('注册失败！用户名称已存在！', '消息', {
+                                        confirmButtonText: '确定'
+                                    });
+                                }else{
+                                    this.$alert('注册失败！请联系管理员！', '消息', {
+                                        confirmButtonText: '确定'
+                                    });
+                                }
                             }
                         })
                     } else {
                         return false;
                     }
                 });
+            },
+            resetForm(formname){
+                switch(formname){
+                    case 'LoginForm':
+                        this.$refs['LoginForm'].resetFields();
+                        break;
+                    case 'RegFrom':
+                        this.$refs['RegForm'].resetFields();
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }

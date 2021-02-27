@@ -8,19 +8,27 @@ import login from '@/view/user/Login.vue'
 Vue.use(Router)
 
 const router = new Router({
-  mode:'history',
-  routes: [
-    {
-		path: '/',
-		name: 'index',
-		component: index
-    },
-	{
-        path: '/Login',
-        name: 'login',
-        component: login
-	}
-  ]
+    mode:'history',
+    routes: [
+        {
+            path: '/',
+            name: 'index',
+            component: index
+        },
+
+        {
+            path: '/index',
+            name: 'index',
+            component: index
+        },
+
+        {
+            path: '/Login',
+            name: 'login',
+            component: login
+        },
+
+    ]
 })
 
 export default router;

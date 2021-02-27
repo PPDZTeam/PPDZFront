@@ -38,9 +38,7 @@ name: "footer"
     justify-content: center;
     background-color: white;
 
-    margin-top: 10px;
-
-
+    margin-top: 0px;
 }
 
 #footer_content{

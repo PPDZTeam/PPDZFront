@@ -2,7 +2,7 @@
     <div id="header_top_box">
         <div class="header_box_content">
             <div class="left_box">
-                <a>首页</a>
+                <router-link :to="{name:'index'}">首页</router-link>
                 <a>碰碰点子</a>
                 <a>碰碰点子</a>
                 <a>碰碰点子</a>

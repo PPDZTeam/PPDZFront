@@ -103,7 +103,5 @@
     margin-bottom: 10px;
     display: flex;
     align-items: flex-start;
-
-    background-color: green;
 }
 </style>

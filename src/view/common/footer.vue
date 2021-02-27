@@ -23,7 +23,7 @@
 
 <script>
 export default {
-    name: "footer"
+
 }
 </script>
 
@@ -39,18 +39,13 @@ export default {
     justify-content: center;
     background-color: white;
 
-<<<<<<< HEAD
-    margin-top: 0px;
-=======
     margin-top: 10px;
-
 }
 
 #footer_box a{
     color: #999;
     margin-left: 10px;
     margin-right: 10px;
->>>>>>> 9bbb5acb6fdeb1478d8b75e65ec80cd9189b35d7
 }
 
 #footer_content{

@@ -64,7 +64,5 @@ export default {
 
 .ap_sort {
     width: calc(100% - 250px);
-
-    background-color: green;
 }
 </style>
